@@ -1,0 +1,147 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgba(238, 237, 237, 0.6); }
+
+.header {
+  max-width: 100%;
+  height: 7vh;
+  background-color: rgba(238, 237, 237, 0.6); }
+  .header-item {
+    float: right;
+    margin-right: 5rem;
+    font-size: 1.4rem;
+    font-family: 'Roboto Slab';
+    font-weight: 100;
+    text-decoration: none;
+    color: black; }
+
+.fav {
+  float: left; }
+  .fav-handwritten {
+    font-family: 'Kaushan Script';
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: black; }
+  .fav-title {
+    font-family: 'Acme';
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: black; }
+
+.hero {
+  max-width: 100%;
+  height: 80vh;
+  background-image: linear-gradient(to right, rgba(238, 237, 237, 0.6), rgba(195, 188, 188, 0.6), rgba(155, 150, 150, 0.6)), url("../img/arch/1.png");
+  background-size: cover;
+  background-position: center;
+  object-fit: contain; }
+  .hero .hero-title {
+    width: 75vw;
+    justify-content: center;
+    background-color: black;
+    text-align: center;
+    transform: translate(15%, 350%);
+    font-family: 'Acme';
+    font-size: 3.4rem;
+    vertical-align: middle;
+    color: white;
+    animation-name: swingin-left;
+    animation-duration: 0.25s; }
+
+.introduction {
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: 1fr 3fr;
+  background-color: rgba(238, 237, 237, 0.6);
+  margin-top: 5%; }
+  .introduction-profile {
+    height: 50vh; }
+  .introduction-heading {
+    text-align: center;
+    font-family: 'Roboto Slab';
+    font-size: 1.8rem; }
+  .introduction-content {
+    font-family: 'Roboto Slab'; }
+
+.skills .skills-item {
+  margin-left: 15%;
+  float: left; }
+
+.portfolio {
+  justify-content: center;
+  background-color: rgba(238, 237, 237, 0.6); }
+
+.work:not(:first-child) {
+  margin-top: 5rem; }
+
+.work-heading {
+  font-size: 1.4rem;
+  font-family: 'Roboto Slab'; }
+
+.work-samples {
+  float: left; }
+  .work-samples:not(:first-child) {
+    margin-left: 2rem; }
+
+.footer {
+  margin-top: 5%;
+  text-align: center;
+  background-color: rgba(238, 237, 237, 0.6);
+  text-decoration: none;
+  color: black;
+  font-family: 'Roboto Slab'; }
+
+@keyframes swingin-left {
+  0% {
+    transform: translate(-100%, 350%);
+    opacity: 0; }
+  25% {
+    transform: translate(-75%, 350%);
+    opacity: 0.25; }
+  50% {
+    transform: translate(-50%, 350%);
+    opacity: 0.5; }
+  75% {
+    transform: translate(-25%, 350%);
+    opacity: 0.75; }
+  100% {
+    transform: translate(0, 350%);
+    opacity: 1; } }
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%;
+  /* Full width */
+  padding: 12px;
+  /* Some padding */
+  border: 1px solid #ccc;
+  /* Gray border */
+  border-radius: 4px;
+  /* Rounded borders */
+  box-sizing: border-box;
+  /* Make sure that padding and width stays in place */
+  margin-top: 6px;
+  /* Add a top margin */
+  margin-bottom: 16px;
+  /* Bottom margin */
+  resize: vertical; }
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer; }
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049; }
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px; }
